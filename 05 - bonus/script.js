@@ -5,13 +5,25 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+const aName = 'Mario';
 
 
 // Dichiara la funzione qui.
+function say_hi_to_user () {
+    let date = new Date()
+    let hour = date.getHours()
+    if (hour < 12) {
+        return `Buongiorno ${aName}`
+    } else if (hour > 12 && hour < 17) {
+        return `Buon pomeriggio ${aName}`
+    } else if (hour > 17) {
+        return ` Buonasera ${aName}`
+    }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(say_hi_to_user());
 
 
 
