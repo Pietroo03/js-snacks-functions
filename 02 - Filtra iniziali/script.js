@@ -4,18 +4,18 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function array_names_start_with_a(array, letter) {
+function array_names_start_with(array, letter) {
     const filtered_names = []
     for (let i = 0; i < array.length; i++) {
         if (array[i].charAt(0) === letter) {
             filtered_names.push(array[i])
         }
     }
-    console.log(filtered_names); 
+    return(filtered_names); 
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-array_names_start_with_a(names, 'A')
+console.log(array_names_start_with(names, 'A'))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
