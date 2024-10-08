@@ -4,21 +4,21 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function number_of_vowel () {
+function number_of_vowel (str) {
     let count = 0
     let vowels = []
-    for (let i = 0; i < word.length; i++) {
-        if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'o' || word.charAt(i) == 'u') {
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
             count++
-            vowels.push(word.charAt(i))
+            vowels.push(str.charAt(i))
         }
     }
-    const output_function = `${word} : ${count} (${vowels})`
-    console.log(output_function);
+    const output_function = `${str} : ${count} (${vowels})`
+    return output_function;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-number_of_vowel()
+console.log(number_of_vowel(word))
 
 
 
