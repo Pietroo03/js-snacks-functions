@@ -9,11 +9,12 @@ function take_first_letter () {
         let single_name = names[i]  
         capital_letters.push(single_name.charAt(0))
     }
-    console.log(capital_letters);
+    return capital_letters
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-take_first_letter()
+console.log(take_first_letter());
+ 
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
